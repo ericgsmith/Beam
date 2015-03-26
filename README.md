@@ -1,6 +1,7 @@
 #Beam
 
-Beam is a lightweight theme for [Hologram](https://github.com/trulia/hologram).
+Beam is a lightweight theme for [Hologram](https://github.com/trulia/hologram)
+inspired by Yago's [Cortana](https://github.com/Yago/Cortana).
 
 ##Usage
 See [Hologram](https://github.com/trulia/hologram) to install Hologram.
@@ -21,6 +22,14 @@ documentation_assets: ./bower_components/hologram-beam/doc_assets
 # Include to make use of the custom colour swatch tag.
 code_example_renderers: ./bower_components/hologram-beam/code_renderers
 code_example_templates: ./bower_components/hologram-beam/code_templates
+
+# List all css to include (relative to the compiled styleguide)
+css_include:
+  - '../build/css/styles.css'
+
+# List all js to include (relative to the compiled styleguide)
+js_include:
+  - '../build/js/main.js'
 ```
 
 Alternatively, you can clone this repo and alter the paths used in hologram_config.yml

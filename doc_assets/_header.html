@@ -4,8 +4,12 @@
     <title>Styleguide: <%= title %></title>
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme/styleguide.css">
-    <!-- Add theme stylesheets here  -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Source CSS -->
+    <% if @config['css_include'].to_s.strip.length != 0 %>
+      <% @config['css_include'].each do |css| %>
+      <link rel="stylesheet" href="<%= css %>">
+      <% end %>
+    <% end %>
   </head>
   <body class="styleguide">
     <header class="styleguide header-bar">

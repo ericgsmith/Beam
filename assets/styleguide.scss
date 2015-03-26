@@ -223,7 +223,6 @@ table.styleguide {
   > tbody > tr > th {
     text-align: left !important;
     padding: 0 !important;
-    width: 50% !important;
     border: 0 !important;
     background: none !important;
 
@@ -231,6 +230,10 @@ table.styleguide {
         background: none !important;
       }
   }
+}
+
+.codeTable > table > tbody > tr > td {
+  width: 50% !important;
 }
 
 table.styleguide > tbody > tr > th {

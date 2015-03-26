@@ -1,0 +1,19 @@
+{
+  "name": "hologram-beam",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ericgsmith/Beam",
+  "authors": [
+    "Eric Smith <eric.smith@cameronandwilding.com>"
+  ],
+  "description": "Beam is a lightweight theme for style guides generated using Hologram",
+  "keywords": [
+    "hologram",
+    "styleguide",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "assets"
+  ]
+}

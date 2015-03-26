@@ -17,7 +17,6 @@ body.styleguide {
 
 // Page components.
 .styleguide {
-  font-family: Helvetica, Arial, sans-serif !important;
 
   &.header-bar {
     height: 60px !important;
@@ -30,6 +29,7 @@ body.styleguide {
     border: 0 !important;
     margin: 0 !important;
     padding: 0 15px !important;
+    font-family: Helvetica, Arial, sans-serif !important;
     font-size: 36px !important;
     font-weight: bold !important;
     line-height: 60px !important;
@@ -53,6 +53,7 @@ body.styleguide {
       display: block !important;
       margin: 0 !important;
       padding: 0 15px !important;
+      font-family: Helvetica, Arial, sans-serif !important;
       text-decoration: none !important;
       color: $dark-grey !important;
 
@@ -103,7 +104,9 @@ body.styleguide {
       display: block !important;
       margin: 0 !important;
       padding: 5px 10px !important;
+      font-family: Helvetica, Arial, sans-serif !important;
       font-size: 18px !important;
+      text-decoration: none !important;
       line-height: 24px !important;
       border-radius: 6px !important;
       color: $dark-grey !important;
@@ -122,8 +125,10 @@ body.styleguide {
     h2.styleguide,
     h3.styleguide,
     h4.styleguide {
+
       margin: 0.67em 0 !important;
       padding: 0 !important;
+      font-family: Helvetica, Arial, sans-serif !important;
       font-weight: normal !important;
       text-decoration: none !important;
       background: none !important;
@@ -148,6 +153,23 @@ body.styleguide {
     h4.styleguide {
       font-size: 21px !important;
       line-height: 28px !important;
+    }
+
+    p.styleguide {
+      font-size: 14px;
+      font-family: Helvetica, Arial, sans-serif !important;
+      line-height: 21px;
+      margin-bottom: 14px;
+    }
+
+    code.styleguide {
+      display: inline-block;
+      padding: 5px 14px !important;
+      margin: 0 !important;
+      font-family: monospace;
+      font-size: 85% !important;
+      background-color: $light-grey !important;
+      border-radius: 3px !important;
     }
   }
 }
@@ -184,21 +206,41 @@ body.styleguide {
 }
 
 // Table example.
-.codeTable > table {
+.codeTable > table,
+table.styleguide {
   width: 100% !important;
   border: 0 !important;
+  background: none !important;
+  display: table !important;
+  border-collapse: separate !important;
+  border-spacing: 5px !important;
 
+  > tbody > tr {
+    padding: 3px 0;
+  }
 
   > tbody > tr > td,
   > tbody > tr > th {
+    text-align: left !important;
     padding: 0 !important;
     width: 50% !important;
     border: 0 !important;
+    background: none !important;
+
+      &:hover {
+        background: none !important;
+      }
   }
 }
 
+table.styleguide > tbody > tr > th {
+  font-weight: bold;
+}
+
 // Rendered code.
-.codeExample {
+.codeExample,
+.swatchExample,
+.codeBlock {
   overflow: hidden !important;
 }
 

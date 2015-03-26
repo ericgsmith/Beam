@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Styleguide: <%= title %></title>
+    <link rel="stylesheet" href="./css/styleguide.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body class="styleguide">
+    <header class="styleguide header-bar">
+      <nav>
+        <ul class="styleguide main-navigation">
+          <li><h1 class="styleguide page-title">Styleguide</h1></li>
+          <% @categories.each do |category, file_name| %>
+            <% if category == title %>
+            <li><a href="<%= file_name %>" class="active"><%= category %></a></li>
+            <% else %>
+            <li><a href="<%= file_name %>"><%= category %></a></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="styleguide main-content">
+      <div class="styleguide sidebar">
+        <ul class="styleguide secondary-navigation">
+          <% @blocks.each do |b| %>
+          <li class="styleguide"><a href="#<%= b[:name] %>" class="styleguide"><%= b[:title] %></a></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="styleguide generated-content">

@@ -2,6 +2,8 @@
 
 Beam is a lightweight theme for [Hologram](https://github.com/trulia/hologram).
 
+View the [Beam example](https://github.com/ericgsmith/Beam-example).
+
 ##Usage
 See [Hologram](https://github.com/trulia/hologram) to install Hologram.
 
